@@ -1,0 +1,16 @@
+{
+  "name": "odometer-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/technoboom/reactive-odometer-component.git"
+  },
+  "author": "dimi3ryi <feschenko.dmitryi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "rxjs": "^5.4.2"
+  }
+}

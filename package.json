@@ -1,16 +1,43 @@
 {
-  "name": "odometer-component",
+  "name": "react-odometer",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "react-odometer React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "nwb": "0.18.x",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "rx": "^4.1.0",
+    "rx-connect": "^0.6.2",
+    "rxjs": "^5.4.2"
+  },
+  "author": "technoboom <feschenko.dmitryi@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
   "repository": {
     "type": "github",
     "url": "https://github.com/technoboom/reactive-odometer-component.git"
   },
-  "author": "dimi3ryi <feschenko.dmitryi@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "rxjs": "^5.4.2"
-  }
+  "keywords": [
+    "react-component"
+  ]
 }

@@ -3,27 +3,10 @@ import Rx from 'rx';
 import { rxConnect } from 'rx-connect';
 import PropTypes from 'prop-types';
 
-@rxConnect(
-    Rx.Observable.timer(0, 1000).timestamp()
-)
+@rxConnect(() => {
+  return Rx.Observable.timer(0, 10).startWith(10).takeWhile(val => val <= 1000).timestamp()
+})
 class Odometer extends React.PureComponent {
-
-  constructor() {
-    super();
-    // this.state = {
-    //   value: 0
-    // };
-    // this.subscription = undefined;
-  }
-
-  componentWillMount() {
-    // this.subscription = Rx.Observable.timer(0, 1000).timestamp().subscribe(::this.setState)
-  }
-
-  componentWillUnmount() {
-    // this.subscription.dispose();
-  }
-
   render() {
     return <div>{this.props.value}</div>
   }

@@ -7,6 +7,26 @@
 An implementation of Odometer as React component with core principles
 of reactive programming.
 
+## How to use?
+
+## Build:
+Clone the repository:
+```
+git clone https://github.com/technoboom/reactive-odometer-component
+```
+You can use Yarn or NPM for installing dependencies: `yarn install` or `npm install`
+
+Run the demo: `npm run start` - start a development server for the demo app
+
+## Test:
+
+Single run: `npm run test`
+
+Coverage: `npm run test:coverage` - run tests and produce a code coverage report in coverage/
+
+Run with watch mode: `npm run test:watch` - start a test server and re-run tests on every change
+
+
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 
